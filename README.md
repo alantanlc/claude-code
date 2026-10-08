@@ -35,13 +35,33 @@ Get set up:
 
 ### Examples
 
-- How is `@RoutingController.py` used?
-- How do I make a new `@app/services/ValidationTemplateFactory`?
-- Why does recoverFromException take so many arguments? Look through git history to answer
-- Why did we fix issue #18363 by adding the if/else in `@src/login.ts` API?
-- In which version did we release the new `@api/ext/PreHooks.php` API?
-- Look at PR #9383, then carefully verify which app versions were impacted
-- What did I ship last week?
+```
+> How is @RoutingController.py used?
+```
+
+```
+> How do I make a new @app/services/ValidationTemplateFactory?
+```
+
+```
+> Why does recoverFromException take so many arguments? Look through git history to answer
+```
+
+```
+> Why did we fix issue #18363 by adding the if/else in @src/login.ts API?
+```
+
+```
+> In which version did we release the new @api/ext/PreHooks.php API?
+```
+
+```
+> Look at PR #9383, then carefully verify which app versions were impacted
+```
+
+```
+> What did I ship last week?
+```
 
 ### Tips
 
@@ -56,31 +76,53 @@ Get set up:
 ### Steer Claude to use tools your way
 
 Example prompts
-- Propose a few fixes for issue #8732, then implement the one I pick
-- Identify edge cases that are not covered in `@app/tests/signupTest.ts`, then update the tests to cover these. think hard
-- commit, push, pr
-- Use 3 parallel agents to brainstorm ideas for how to clean up `@services/aggregator/feed_service.cpp`
+
+```
+> Propose a few fixes for issue #8732, then implement the one I pick
+```
+
+```
+> Identify edge cases that are not covered in `@app/tests/signupTest.ts`, then update the tests to cover these. think hard
+```
+
+```
+> commit, push, pr
+```
+
+```
+> Use 3 parallel agents to brainstorm ideas for how to clean up `@services/aggregator/feed_service.cpp`
+```
 
 ### Plug in your team's tools
 
 Tell Claude about your bash tools
-- Use the barley CLI to check for error logs in the last training run. Use -h to check how to use it.
+```
+> Use the barley CLI to check for error logs in the last training run. Use -h to check how to use it.
+```
 
 Tell Claude about your MCP tools
 ```shell
 $ claude mcp add barley_server -- node myserver
 ```
 
-- Use the barley MCP server to check for error logs in the last training run
+```
+> Use the barley MCP server to check for error logs in the last training run
+```
 
 ### Common workflows
 
 Explore > plan > confirm > code > commit
-- Figure out the root cause for issue #983, then propose a few fixes. Let me choose an approach before you code. ultrathink
+```
+> Figure out the root cause for issue #983, then propose a few fixes. Let me choose an approach before you code. ultrathink
+```
 
 Write tests > commit > code > iterate > commit
-- Write tests for @utils/markdown.ts to make sure links render properly (note the tests won't pass yet, since links aren't yet implemented). Then commit. Then update test code to make the tests pass.
+```
+> Write tests for @utils/markdown.ts to make sure links render properly (note the tests won't pass yet, since links aren't yet implemented). Then commit. Then update test code to make the tests pass.
+```
 
 Write code > screenshot result > iterate
-- Implement [mock.png], Then screenshot it with Puppeteer and iterate till it looks like the mock.A
+```
+> Implement [mock.png], Then screenshot it with Puppeteer and iterate till it looks like the mock.A
+```
 
